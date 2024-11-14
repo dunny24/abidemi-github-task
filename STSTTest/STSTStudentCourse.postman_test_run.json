@@ -1,0 +1,273 @@
+{
+	"id": "e9ca50cf-0c24-496b-bba7-14848cffaebf",
+	"name": "STSTStudentCourse",
+	"timestamp": "2024-11-03T23:52:15.191Z",
+	"collection_id": "28439420-f6c65bf0-6576-482f-9bba-762f5dd49e67",
+	"folder_id": 0,
+	"environment_id": "28439420-0f215075-6d6b-4ebc-8dce-7d1aa73844f0",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "error",
+	"startedAt": "2024-11-03T23:52:11.237Z",
+	"totalFail": 7,
+	"results": [
+		{
+			"id": "c4ef0b73-9425-4410-9994-893914f3bf18",
+			"name": "Get All Todo Entries",
+			"url": "https://simple-books-api.glitch.me/api-client/index.php",
+			"time": 244,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name should have an OK string": true,
+				"Body is correct": false,
+				"Your test name": false,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				244
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name should have an OK string": true,
+					"Body is correct": false,
+					"Your test name": false,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "4a8f9f08-1320-4255-866a-06a62797963e",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/",
+			"time": 242,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				242
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6d415c96-d696-42d0-99d6-dbead02b77b6",
+			"name": "Get entry per ID - Valid ID",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 255,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				255
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c0950719-c14a-46be-b708-696144faa838",
+			"name": "Get entry per ID - Invalid ID(params not using TODO ID)",
+			"url": "https://simple-books-api.glitch.me//api-client/entry/:entryid",
+			"time": 314,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				314
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "c46b0e3e-eb1b-4786-84c4-187bf5e681c7",
+			"name": "Get All Books",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 336,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Search for a book name called Viscount who loved Me": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search for a book name called Viscount who loved Me": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				336
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Search for a book name called Viscount who loved Me": false
+				}
+			]
+		},
+		{
+			"id": "a0887653-281b-4909-8808-81107f44d395",
+			"name": "Get Books by ID",
+			"url": "https://simple-books-api.glitch.me/:booksId",
+			"time": 330,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				330
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "973c8591-6399-4938-849d-400e9c40be80",
+			"name": "Get Books by Type",
+			"url": "https://simple-books-api.glitch.me/:books/book?type",
+			"time": 324,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				324
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2045,
+	"collection": {
+		"requests": [
+			{
+				"id": "c4ef0b73-9425-4410-9994-893914f3bf18",
+				"method": "GET"
+			},
+			{
+				"id": "4a8f9f08-1320-4255-866a-06a62797963e",
+				"method": "GET"
+			},
+			{
+				"id": "6d415c96-d696-42d0-99d6-dbead02b77b6",
+				"method": "GET"
+			},
+			{
+				"id": "c0950719-c14a-46be-b708-696144faa838",
+				"method": "GET"
+			},
+			{
+				"id": "c46b0e3e-eb1b-4786-84c4-187bf5e681c7",
+				"method": "GET"
+			},
+			{
+				"id": "a0887653-281b-4909-8808-81107f44d395",
+				"method": "GET"
+			},
+			{
+				"id": "973c8591-6399-4938-849d-400e9c40be80",
+				"method": "GET"
+			},
+			{
+				"id": "b6eb83eb-bb4d-4a51-954c-0a41603364af",
+				"method": "GET"
+			}
+		]
+	}
+}
