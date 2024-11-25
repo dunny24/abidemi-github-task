@@ -1,0 +1,1 @@
+{"uuid":"a7969a52-f61f-4ef6-8190-08dcbb2e02fc","name":"SeleniumKongaLoginTest","children":["a7f95e96-673f-4b2d-913e-cc7aff2ab1de"],"befores":[],"afters":[{"name":"closeBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1732122862252,"stop":1732122862677}],"start":1732122838583,"stop":1732122862707}
